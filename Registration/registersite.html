@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Registration</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="Assets/register.css">
+	<script type="text/javascript" src="Assets/registercolorchanger.js"></script>
+</head>
+<body>
+	<div class="vcontainer">
+		<div class="logo">
+      		<img src="assets/Devspace Logo pranshu.svg">
+      	</div>
+	    <form action="" method="get">
+	    	<div class="form-group">
+		      <fieldset class="form-field">
+		        <legend class="legend-border">Name</legend>
+		        <input name="name" id="name" type="text">
+		      </fieldset>
+		      <fieldset class="form-field">
+		        <legend class="legend-border">Mobile Number</legend>
+		        <input name="mobile" id="mobile" type="text" onkeypress="return isNumber(event)" maxlength="10">
+		      </fieldset>
+			  <label class="container">I am a VITian
+				  <input type="checkbox" id="VITian" onclick="EnableTextbox('VITian', 'reg-no-field')">
+				  <span class="checkmark"></span>
+			  </label>        
+		      <fieldset id="form-field" class="form-field">
+		        <legend class="legend-border">Reg. No.</legend>
+		        <input name="reg-no" id="reg-no-field" type="text">
+		      </fieldset>
+		      <fieldset class="form-field">
+		        <legend class="legend-border">Email</legend>
+		        <input name="email" id="email" type="email">
+		      </fieldset>
+		      <div id="submit-container" class="form-field">
+		        <button id="submit-btn" type="submit">Submit</button>
+		      </div>
+		    </div>
+	    </form>
+	</div>
+</body>
+</html>
